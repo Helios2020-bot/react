@@ -1,23 +1,23 @@
 import logo from './logo.svg';
 import './App.css';
-import Header from './Header';
 import Footer from './Footer';
+import Header from './Header';
+import Card from './Card';
+import Aside from './Aside';
 import Main from './Main';
-import 'bootstrap/dist/css/bootstrap.min.css';
-
+import  Navbar from './Navbar';
+import Sum from './Sum';
+import propTypes from 'prop-type';
+// import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/js/bootstrap.js'
 function App() {
-  let y=[{name:'raja'},{name:'rani'}];
-  // let x=10;
-
-
   return (
-    <div>
-
-    <Header x="Cybage"></Header>
-    <Main></Main>
-    <Footer title="www.cybage.com"></Footer>
-
-    </div>
+    <>
+    <Header/>
+    <Main/>
+    {/* <Sum a={"1"} b={2}></Sum> */}
+    <Footer/>
+    </>
   );
 }
 

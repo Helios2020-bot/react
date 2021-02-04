@@ -1,55 +1,55 @@
-import React from 'react';
 import './Main.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-var images=[{imgId:101,imgName:"Nature",imgCategory:"Nature",imgSrc:"images/download.jfif"},
-{imgId:102,imgName:"Nature",imgCategory:"Nature",imgSrc:"images/nature.jfif"},
-{imgId:103,imgName:"Iceland",imgCategory:"Scenary",imgSrc:"images/iceland.jfif"},
-{imgId:104,imgName:"Volcano",imgCategory:"Landscapes",imgSrc:"images/volcano.jfif"},
-{imgId:105,imgName:"Children",imgCategory:"Beauty",imgSrc:"images/children.jfif"}];
-class Main extends React.Component{
-  render(){
-    return(
-      <div className="main d-flex">
-{/*
-<table className="table">
-  <thead className="thead-dark">
-    <tr>
-
-      <th scope="col">imgId</th>
-      <th scope="col">imgName</th>
-      <th scope="col">imgCategory</th>
-      <th scope="col">imgSrc</th>
-    </tr>
-  </thead> */}
+import Question from './Question';
+const qBank = [
   {
-    images.map((img) =>{
-      return(
-    //     <tbody>
-    //     <tr>
-    //   <td>{img.imgId}</td>
-    //   <td>{img.imgName}</td>
-    //   <td>{img.imgCategory}</td>
-    //   <td>{img.imgSrc}</td>
+    question:
+      "what is the capital of Maharashtra ?",
+    answers: ["Nashik", "Aurangabad", "Mumbai", "Nagpur"],
+    correct: "vinayak",
+    questionId: "1"
+  },
+  {
+    question: "What is the capital of United Kingdom?",
+    answers: ["Manchester", "Birmingham", "London", "Birmingham"],
+    correct: "London",
+    questionId:"2"
+  },
 
-    // </tr>
-    // </tbody>
-      <div className="card">
-         <img src={img.imgSrc}  alt="..."></img>
+  {
+    question: "What is the capital of India?",
+    answers: ["Indore", "Delhi", "Goa", "Mumbai"],
+    correct: "Delhi",
+    questionId:"3"
+  }
+];
+
+
+const Main=()=>{
+  return(
+
+      <div className="container-fluid bg-dark">
+
+      {/* <div className="card">
         <div className="card-body">
-          <h5 className="card-title ">{img.imgName}</h5>
-          <p className="card-text ">{img.imgCategory}</p>
-
+          <h5 className="card-title ">Question:1</h5>
+          <p className="card-text ">{qBank[0].question}</p>
+           <p className="card-text btn-btn-primary">{qBank[0].answers[0]}</p>
+          <button type="button" className="btn btn-primary mt-2 mr-2">{qBank[0].answers[0]}</button>
+          <button type="button" className="btn btn-primary mt-2 mr-2">{qBank[0].answers[1]}</button>
+          <button type="button" className="btn btn-primary mt-2 mr-2">{qBank[0].answers[2]}</button>
+          <button type="button" className="btn btn-primary mt-2 mr-2">{qBank[0].answers[3]}</button>
         </div>
+      </div> */}
+      {/* <div className="card">
+      <div className="card-body text-center">
+      Score is <h3>3/5</h3>
       </div>
-    )
-    })
-  }
-{/* </table> */}
+      </div> */}
+      <Question questions={qBank} x={qBank.length}></Question>
 
+      </div>
 
-        </div>
-    )
-  }
+  )
 }
-
 export default Main;
