@@ -1,0 +1,9 @@
+aside {
+  width: 30%;
+  height: 13rem;
+  padding-left: 15px;
+  margin: 15px;
+  float: right;
+  font-style: italic;
+  background-color: rgba(33, 96, 231, 0.096);
+}

@@ -4,8 +4,9 @@ import './Footer.css';
 class Footer extends React.Component{
   render(){
     return(
-    <footer>{this.props.title}</footer>
+      <footer>Copyright @www.cybage.com</footer>
     )
+  }
 }
-}
+
 export default Footer;

@@ -1,6 +1,7 @@
-.header{
+h1{
+  position: relative;
+  margin: 0%;
+  padding: 2rem;
+  background-color: #6591f1b2;
   text-align: center;
-  background-color:rgb(152, 155, 158);
-  padding: 3%;
-  font-size: calc(20px + 2vmin);
 }
