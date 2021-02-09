@@ -1,0 +1,6 @@
+.header{
+  text-align: center;
+  background-color:rgb(152, 155, 158);
+  padding: 3%;
+  font-size: calc(20px + 2vmin);
+}

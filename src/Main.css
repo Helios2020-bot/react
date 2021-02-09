@@ -1,0 +1,12 @@
+.main{
+  background-color: aliceblue;
+  padding: 3%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+.card,card-body{
+  padding: 1%;
+  margin: 1%;
+  background-color: rgb(195, 210, 223) !important;
+}
+
